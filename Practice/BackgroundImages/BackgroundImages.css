@@ -1,0 +1,72 @@
+#Title{
+    text-align:center; 
+
+}
+#Test1{
+    background-image:url("Donut.png"),url("Hazel.jpg");
+    text-align:center;
+    background-size: contain;
+    color:white;
+    padding:20px;
+}
+#G{
+    color: #F1592A;
+    text-shadow: 
+    -9px 9px 0 #0E89B6,
+    -8px 8px 0 #0E89B6,
+    -7px 7px 0 #0E89B6,
+    -6px 6px 0 #0E89B6,
+    -5px 5px 0 #0E89B6,
+    -4px 4px 0 #0E89B6,
+    -3px 3px 0 #0E89B6, 
+    -2px 2px 0 #0E89B6, 
+    -1px 1px 0 #0E89B6;
+
+
+}
+#O{
+    color:#5DD0E3;
+    text-shadow: 
+    -9px 9px 0 #744C2F,
+    -8px 8px 0 #744C2F,
+    -7px 7px 0 #744C2F,
+    -6px 6px 0 #744C2F,
+    -5px 5px 0 #744C2F,
+    -4px 4px 0 #744C2F,
+    -3px 3px 0 #744C2F,
+    -2px 2px 0 #744C2F,
+    -1px 1px 0 #744C2F;
+}
+#L{
+    color:#009338;
+    text-shadow: 
+    -9px 9px 0 #A624B8,
+    -8px 8px 0 #A624B8,
+    -7px 7px 0 #A624B8,
+    -6px 6px 0 #A624B8,
+    -5px 5px 0 #A624B8,
+    -4px 4px 0 #A624B8,
+    -3px 3px 0 #A624B8,
+    -2px 2px 0 #A624B8,
+    -1px 1px 0 #A624B8;
+}
+#F{
+    color:#F8E01C;
+    text-shadow: 
+    -9px 9px 0 #ED082C,
+    -8px 8px 0 #ED082C,
+    -7px 7px 0 #ED082C,
+    -6px 6px 0 #ED082C,
+    -5px 5px 0 #ED082C,
+    -4px 4px 0 #ED082C,
+    -3px 3px 0 #ED082C,
+    -2px 2px 0 #ED082C,
+    -1px 1px 0 #ED082C;
+}
+#Test2{
+    background-image:url("Stripes.png");
+    font-size:100px;
+    text-align:center;
+    font-family:'Arial Black','Arial Bold', sans-serif;
+    font-weight:1000;
+}

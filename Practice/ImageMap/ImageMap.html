@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map</title>
+    <meta name="author" content="Dilan Bautista">
+     <link rel="stylesheet" href="ImageMap.css"> 
+</head>
+<body>
+    <!-- Inserting image -->
+    <h1>Check out this interactive image:</h1>
+    <img id= "Shapes" src= "Shapes.jpg" alt="Shapes" usemap="#workmap">
+    <!-- Creating image map-->
+    <map name="workmap">
+        <area shape="rect" coords="260,11,375,123" alt="Rectangle" 
+            href="https://en.wikipedia.org/wiki/Square" target="_blank">
+        <area shape="circle" coords="75,68,57" alt="Circle"
+            href="https://en.wikipedia.org/wiki/Circle" target="_blank">
+        <area shape="poly" coords="189,13,133,122,247,122" alt="Triangle"
+            href="https://en.wikipedia.org/wiki/Triangle" target="_blank">
+        <area polygon="poly" coords="388,54,446,11,502,53,479,122,408,122" 
+            href="https://en.wikipedia.org/wiki/Pentagon" target="_blank">
+     </map>
+
+
+</body>
+
+
+</html>

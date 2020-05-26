@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="MyHTMLstyles.css">
+    <title>Dustin Purple's Home</title>
+    <meta name="author" content="Dilan Bautista/Dustin Purple">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>This is Dustin Purple's Home</h1>
+    <!--Instagram button-->
+    <a href="https://www.instagram.com/dstn.prpl/" target="_blank">
+        <img src="instagram.png" alt="Instagram" style="float:left;width:20px;height:20px;">dstn.prpl</a>
+    <!--Introduction-->
+    <p id="Intro">Enjoy my vrothers!!</p>
+    <!--Button that directs to page with photos-->
+    <button onmouseup = "mouseUp()" onmousedown="mouseDown()" id="PictureButton">Pictures</button>
+
+    <script>
+        function mouseDown(){
+            document.getElementById("PictureButton").style.borderColor="yellow";
+            document.getElementById("PictureButton").textContent="Die with me";
+        }
+        function mouseUp(){
+             document.getElementById("PictureButton").style.borderColor="green";
+             document.getElementById("PictureButton").textContent="Pictures";
+        }
+    </script>
+</body>
+</html>

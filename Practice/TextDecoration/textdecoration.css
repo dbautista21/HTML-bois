@@ -1,0 +1,29 @@
+#Foreveralone{
+    font-size: 40px; 
+    text-decoration-style: dotted;
+    /* 
+    Styles: solid , dotted , dashed , double , wavy
+    */
+    text-decoration-color: springgreen;
+    /*
+    Colors: Any
+    */
+    text-decoration-line: overline; 
+    /*
+    Lines: underline , overline, line-through , underline overline 
+    */
+}
+#Helpme{
+    font-size: 40px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-decoration: underline overline red wavy;
+    -webkit-text-decoration: underline overline red wavy;  
+    /*
+    Text decoration can fall victim to displaying differently on 
+    different browsers (like any element). On Safari this
+    different way of defining text-decoration in one line will
+    NOT work. Therefore to solve the problem we need to import webkit
+    to make sure that safari reads your code. Chrome works fine without
+    the need of webkit. 
+    */ 
+}

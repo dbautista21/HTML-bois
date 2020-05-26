@@ -1,0 +1,31 @@
+body{ 
+    background-color: black;
+}
+h1{
+    background-color:royalblue;
+    text-align:center;
+    color:whitesmoke;
+    border:5px solid black; 
+}
+#Intro{
+    color:red;
+    -webkit-animation: mymove 2s infinite;
+    animation: mymove 2s infinite; 
+}
+@-webkit-keyframes mymove {
+    50% {color:yellow;}
+}
+@keyframes mymove {
+    50% {color:yellow;}
+}
+#PictureButton{
+    color:white; 
+    background-color:olivedrab; 
+    padding:15px 45px;
+    text-align:center; 
+    display:inline-block;
+    border-style:offset;
+    border-width: 10px; 
+    border-color: darkgreen;
+}
+
