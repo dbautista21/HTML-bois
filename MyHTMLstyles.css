@@ -12,6 +12,9 @@ h1{
     -webkit-animation: mymove 2s infinite;
     animation: mymove 2s infinite; 
 }
+#Introp{
+    color:white;
+}
 @-webkit-keyframes mymove {
     50% {color:yellow;}
 }
