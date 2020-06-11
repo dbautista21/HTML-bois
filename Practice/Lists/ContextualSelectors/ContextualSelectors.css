@@ -1,0 +1,9 @@
+cite{
+    color:green;
+}
+p cite{
+    color:red;
+}
+li cite{
+    color:blue;
+}
