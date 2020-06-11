@@ -8,27 +8,37 @@
     <meta charset = "UTF-8"> 
 </head> 
  <body>	
-	<h1>This is Dustin Purple's Home</h1>
+    <h1>This is Dustin Purple's Home</h1>
+    
     <!--Instagram button-->
-    <div class = "Links"><a 
+    <div class = "links"><a 
         href="https://www.instagram.com/dstn.prpl/" target="_blank">
         <img src="instagram.png" alt="Instagram" style="float:left;width:20px;height:20px;">&nbsp;dstn.prpl</a>
     </div>
-        <!--Introduction-->
+    <!--Introduction-->
     <p id="Intro">Enjoy my vrothers!!</p>
     <p id = "Introp">Wassup you cuckwads this is my new html site   I just wanted to tell you all   hi
     </p>
-    <!--Button that directs to page with photos-->
-    <button onmouseup = "mouseUp()" onmousedown="mouseDown()" id="PictureButton">Pictures</button>
+
+    <!--Buttons that directs to pages-->
+    <div class ="linkmenu">
+    <ul>
+    <li><button onmouseup = "mouseUp()" onmousedown="mouseDown()""
+        id="WhoButton">Who am I?</button> </li>
+    <li><button id = "MusicStuffButton">Some Music Stuff</button></li>
+    <li><button id = "ArtworkButton">Artwork</button> </li>
+    <li><button id = "WildCardButton">Wild Card</button></li>
+    </ul>
+    </div>
 
     <script>
          function mouseDown(){
-            document.getElementById("PictureButton").style.borderColor="yellow";
-            document.getElementById("PictureButton").textContent="Die with me";
+            document.getElementById("WhoButton").style.borderColor="yellow";
+            document.getElementById("WhoButton").textContent="Noone :(";
         }
         function mouseUp(){
-             document.getElementById("PictureButton").style.borderColor="green";
-             document.getElementById("PictureButton").textContent="Pictures";
+             document.getElementById("WhoButton").style.borderColor="green";
+             document.getElementById("WhoButton").textContent="Who am I?";
         }
     </script>
 </body>
