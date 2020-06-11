@@ -1,6 +1,0 @@
-#OrderedList{
-    list-style-type: lower-alpha;
-}
-#UnorderedList li{
-    list-style: inside URL(checkmark_stripped.png);
-}

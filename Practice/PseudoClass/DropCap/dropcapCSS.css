@@ -1,0 +1,29 @@
+/*
+
+p:first-letter{
+    font-size:300%;
+    padding: 0 5px;
+    font-family: sans-serif;
+    vertical-align:middle;
+    line-height: 0.8em;
+}
+#paragraph1{
+    border:solid;
+    padding: 2px 5px;
+
+}
+The above code is a drop caps made without float.
+*/
+
+p:first-letter{
+    font-size:300%;
+    padding: 0 5px;
+    float:left;
+    font-family: sans-serif;
+    line-height: 0.8em;
+}
+#paragraph1{
+    border:solid;
+    padding: 2px 5px;
+
+}

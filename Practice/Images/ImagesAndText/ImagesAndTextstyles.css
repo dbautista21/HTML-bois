@@ -1,0 +1,9 @@
+.Intro a img{
+    width:30px;
+    height:200px;
+    border:solid;
+    
+}
+.Intro a{
+    float:left;
+}

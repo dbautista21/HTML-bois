@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+<title>Overflow and Float</title>
+<meta charset = "UTF-8"> 
+<meta name = "author" content = "Dilan Bautista">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    #container{
+        border-style:solid;
+        max-width:100px;
+        min-width:50px;
+        max-height:60px;
+        overflow:scroll;
+        display:inline-block;
+    }
+    #container2{
+        border-style:dotted;
+        max-height:60px;
+        overflow:hidden;
+        display:inline-block;
+    }
+    #right{
+        border: 3px solid black;
+        padding:10px;
+        margin:10px;
+        float:right;
+        width:33%;
+    }
+    /*The clear property has 4 options: 
+      none, left, right and both.
+      It helps clear up any floats affecting the text
+    */
+
+    #bottom{
+        clear:both;
+    }
+</style>
+</head>
+<!--
+    In this html we will explore the ways to avoid text from overflowing 
+    in a tight box. The overflow property in css serves as a great fix for
+    this.
+    We will also explore the uses of float property.
+-->
+<body>
+    <h1>The first box is using scroll and the second is using hidden.</h1>
+<div id = "container">
+    <p>
+        Hello This is <br>
+        A small hello world for you<br>
+        to see what happens when there<br>
+        is an overflow.</p>
+</div>
+<div id = "container2">
+    <p>
+        Hello this is a second<br>
+        Hello World for you to use<br>
+        to see what happens when there<br>
+        is an overflow.
+    </p>
+</div>
+<br>
+<!--
+    The float property is used to shift an element to a certain area of a site
+    while allowing text to wrap around it. 
+-->
+<p id="right">
+    The absence of romance in my history will, I fear, detract somewhat
+    from its interest; but if it be judged useful by those inquirers who
+    desire an exact knowledge of the past as an aid to the interpretation
+    of the future, which in the course of human things must resemble if it 
+    does not reflect it, I shall be content. 
+</p>
+<p id="main">
+    The absence of romance in my history will, I fear, detract somewhat
+    from its interest; but if it be judged useful by those inquirers who
+    desire an exact knowledge of the past as an aid to the interpretation
+    of the future, which in the course of human things must resemble if it 
+    does not reflect it, I shall be content. In fine, I have written my work,
+    not as an essay which is to win the applause of the moment, but as a 
+    possession for all time.
+</p>
+<p id="bottom">
+    The absence of romance in my history will, I fear, detract somewhat
+    from its interest; but if it be judged useful by those inquirers who
+    desire an exact knowledge of the past as an aid to the interpretation
+    of the future, which in the course of human things must resemble if it 
+    does not reflect it, I shall be content. In fine, I have written my work,
+    not as an essay which is to win the applause of the moment, but as a 
+    possession for all time.
+</p>
+</body>
+
+</html>

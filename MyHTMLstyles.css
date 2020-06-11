@@ -21,8 +21,31 @@ h1{
 @keyframes mymove {
     50% {color:yellow;}
 }
+
+.social ul li a img{
+    vertical-align:middle;
+    width:20px;
+    height:20px;
+}
+.social ul li a{
+    text-decoration: none;
+}
+.social ul li{
+    display:inline-block;
+    margin:0px 0px 20px 10px;
+}
+.social ul{
+    padding:0;
+
+}
 .linkmenu ul li button{
     width:100%;
+    color:white; 
+    padding:15px 45px;
+    text-align:center; 
+    display:inline-block;
+    border-style:offset;
+    border-width: 10px; 
 }
 .linkmenu ul li{
     text-align:center;
@@ -41,42 +64,18 @@ h1{
 
 }
 #WhoButton{
-    color:white; 
     background-color:olivedrab; 
-    padding:15px 45px;
-    text-align:center; 
-    display:inline-block;
-    border-style:offset;
-    border-width: 10px; 
     border-color: darkgreen;
 }
 #MusicStuffButton{
-    color:white; 
     background-color:violet; 
-    padding:15px 45px;
-    text-align:center; 
-    display:inline-block;
-    border-style:offset;
-    border-width: 10px; 
     border-color: red;
 }
 #ArtworkButton{
-    color:white; 
     background-color:blue; 
-    padding:15px 45px;
-    text-align:center; 
-    display:inline-block;
-    border-style:offset;
-    border-width: 10px; 
     border-color: lightblue;
 }
 #WildCardButton{
-    color:white; 
     background-color:orange; 
-    padding:15px 45px;
-    text-align:center; 
-    display:inline-block;
-    border-style:offset;
-    border-width: 10px; 
     border-color:yellow;
 }
