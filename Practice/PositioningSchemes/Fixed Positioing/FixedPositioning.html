@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- 
+    Fixed positioning is often used to place an element onto an HTML file 
+    relative to the viewport. In this file we see that the address and contact 
+    information of The Tiny Diner is stuck into the bottom of the HTML file.
+-->
+<head>
+    <title>Fixed Positioning</title>
+    <meta name = "author" content = "Dilan Bautista">
+    <style>
+        #bottom{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            border-top: 3px solid blue;
+            background-color: #cccccc;
+        }
+        p:last-of-type{
+            padding-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>The Tiny Diner</h1>
+    </div>
+    <div>
+        <p>Pellentesque habitant morbi tristique senectus et netus et 
+            malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec 
+            eu libero sit amet quam egestas semper. Aenean ultricies mi 
+            vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
+            et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum 
+            sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit 
+            eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+            lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut 
+            felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas
+             augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. 
+             Nam dui mi, tincidunt quis, accumsan porttitor, facilisis 
+             luctus, metus
+        </p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et 
+            malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec 
+            eu libero sit amet quam egestas semper. Aenean ultricies mi 
+            vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
+            et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum 
+            sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit 
+            eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+            lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut 
+            felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas
+             augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. 
+             Nam dui mi, tincidunt quis, accumsan porttitor, facilisis 
+             luctus, metus
+        </p>
+    </div>
+    <div id = "bottom">
+        <strong>The Tiny Diner</strong> | 150 Water Street, Brooklyn, NY 11201 |
+        718.555.1111 | 11-10 Teus - Sat
+    </div>
+</body>
+</html>

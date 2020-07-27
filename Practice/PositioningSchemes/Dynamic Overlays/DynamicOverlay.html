@@ -27,17 +27,35 @@
         #picture:hover #note1{
             display:block;
         }
+        #picture a{
+            position:absolute;
+            border: 3px double #333;
+            padding: 1em;
+            /* In order to let the links take up more space in the image*/
+            height:337px;
+            width:20%;
+        }
+        #previous{
+            left: 0;
+            top: 0;
+        }
+        #next{
+            right: 0;
+            top: 0 ;
+        }
     </style>
     
     </head>
 
 <body>
     <h1>Claude Monet The Bridge At Argenteuil</h1>
-    <div id="picture">
+    <div id="picture" >
+        <a href = "/picture2.html" id = "next">Next</a>
+        <a href = "/picture2.html" id = "previous">Previous</a>
         <img src="monet.jpg">
-        <div id = "note1">
+        <!-- <div id = "note1">
             This is a boat!
-        </div>
+        </div> -->>
     </div>
 </body>
 </html>

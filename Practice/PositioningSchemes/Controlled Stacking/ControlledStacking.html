@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+    <title>Controlled Stacking</title>
+    <meta name = "author" content = "Dilan Bautista">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <style>
+        #one{
+            position:relative;
+            z-index: 1;
+            width: 50%;
+            padding: 15px;
+            background-color: yellow;
+        }
+        #two{
+            position:absolute;
+            top:15%;
+            left:15%;
+            padding: 15px;
+            width:50%;
+            background-color:navy;
+            color:white;
+        }
+    </style>
+    </head>
+    <!-- The key value in the CSS above is the z-index-->
+    <body>
+        <p id = "one">This is a paragraph to show how controlled stacking works. 
+            As you can see this paragraph will be given an index of z-index=1.
+            This will make this paragraph overlap another paragraph thar is using 
+            absolute positioning and would be overlapping this paragraph otherwise. 
+            This can allow a writer to organize a website by overlapping elements and
+            manipulating layers of elements.
+        </p>
+        <p id = "two">This other paragraph will be set with CSS to have 
+            absolute positoning which technically would allow it to surpass the other 
+            parahraph. But since paragraph one has a z-index of 1. This paragraph will 
+            stand behing the first one. The first paragraph will be overlapping this one.
+        </p>
+
+    </body>
+</html>

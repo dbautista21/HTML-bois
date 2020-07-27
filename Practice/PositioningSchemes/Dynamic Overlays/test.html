@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Overlays</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+    <style>
+        #picture{
+            position:relative;
+            width: 500px;
+        }
+        #picture img{
+            width:500px;
+            margin:0;
+            padding:0;
+        }
+        .links{
+            position:absolute;
+            top:0;
+        }
+        #linkleft{
+
+            left:0;
+        }
+        #linkright{
+            right:0;
+        }
+        .overlays{
+            width: 100px;
+            height: 360px;
+            opacity: .8;
+            text-align:center;
+
+        }
+        #overlayright:hover{
+            background-color: gray;
+        }
+        #overlayleft:hover{
+            background-color: grey;
+        }
+        p{
+            vertical-align:middle;
+            display:inline-block;
+            line-height: 360px;
+        }
+    </style>
+    </head>
+
+<body>
+    <h1>Claude Monet The Bridge At Argenteuil</h1>
+    <div id="picture">
+        <img src="monet.jpg" alt="monet">
+        <a id = "linkleft" class="links" href="#" title= "Previous" target="_blank">
+         <div id = "overlayleft" class= "overlays"><p>Previous</p></div>
+        </a>
+        <a id = "linkright" class="links" href="#" title="Next" target = "_blank">
+         <div id = "overlayright" class= "overlays"><p>Next</p></div>
+         </a>
+    </div>
+</body>
+</html>
