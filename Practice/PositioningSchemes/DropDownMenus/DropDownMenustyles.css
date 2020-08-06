@@ -1,3 +1,6 @@
+
+
+/*Controls the nav container*/
 #navigationBar{
     position: relative;
     margin:0;
@@ -5,6 +8,7 @@
     height:30px;
     width:90%;
 }
+/*First unordered list*/
 #navigationBar ul{
     margin:0;
     padding:0;
@@ -15,6 +19,7 @@
     background-color:#eeeeee;
     overflow:visible;
 }
+/* All list elements with a list parent*/
 #navigationBar ul > li{
     display: block; 
     float:left;
@@ -23,6 +28,7 @@
     width: 120px;
 
 }
+/* All anchor tags with a parent list element */
 #navigationBar li > a {
     display:block;
     padding: 0 0 0 10px; /* padding top right bottom left */
@@ -37,6 +43,13 @@
     color:#5d5636;
 }
 
+
+
+
+
+
+
+/* All lists within a list */
 #navigationBar ul ul{
     margin-top: none;
     position: static;
@@ -46,7 +59,7 @@
     background-color: #dddddd; 
     display:none;
 }
-
+/* All list elements under a second-tier list*/
 #navigationBar ul ul li{
     position: relative;
     float: none;
@@ -55,6 +68,7 @@
     width:100%;
     border: none;
 }
+/* All anchor tags that have a parent list element */
 #navigationBar ul ul li > a{
     height:100%;
     width:96%;
@@ -66,10 +80,25 @@
     font-size:12px;
     font-style:normal;
 }
+
+
+
+
+/* All lists that are tier-three lists*/
+#navigationBar ul ul ul{
+    position:absolute;
+    left:150px;
+    top:0px;
+}
+/* Control what happens to anchor tags 
+    if you hover over a list element */
+
 #navigationBar li:hover > a{
     color:#220000;
     background-color:#eeeabe;
 }
+/* Control what happens to a child list if
+    you hover over a list element */
 #navigationBar li:hover > ul{
     display:block;
 }

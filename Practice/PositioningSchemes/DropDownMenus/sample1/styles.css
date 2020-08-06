@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color:white;
+}
+/* this focuses on what gets done to the nav*/
+nav{
+    width:100%; 
+    height:60px;
+    background-color:grey;
+}
+nav p{
+    font-family:arial;
+    color:#222;
+    font-size: 24px;
+    line-height: 55px;
+    float:left;
+    padding: 3px 20px;
+    background-color:white;
+}
+/* The unordered list must float on the right side of the
+    title 
+    First unordered list in nav*/
+nav ul{
+    float:left;
+}
+/* List elements in the top-tier unordered list*/
+nav ul li{
+    float:left;
+    list-style:none;
+    position:relative;
+}
+/* Anchor tags in the list elements of the unordered list */
+nav ul li a {
+    display:block;
+    background-color: grey;
+    font-family:arial;
+    font-size:14px;
+    color: black;
+    padding: 22px 14px;
+    text-decoration:none;
+}
+
+/* Second unordered list/ sub-list*/
+nav ul li ul {
+    display:none;
+    position:absolute;
+    border-radius:0px 0px 4px 4px;
+    padding:10px;
+    background-color:grey;
+}
+/* List elements of second unordered list*/
+nav ul li ul li{
+    width:180px;
+}
+/* Anchor tags in list elements of second-tier list*/
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+/* Control what happens when you hover over elements
+   of the second unordered list */
+nav ul li ul li a:hover{
+    background-color:lightgrey;
+}
+/* Control what happens when you hover over list elements in 
+    top-tier list */
+nav ul li:hover ul{
+    display:block;
+
+}

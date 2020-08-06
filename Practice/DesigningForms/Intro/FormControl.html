@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+<title>Form Control</title>
+<meta charset = "UTF-8"> 
+<meta name = "author" content = "Dilan Bautista">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+    <label>Email:
+        <input type="email" id="address">
+    </label>
+    <label>URL:
+        <input type="url" id="website" multiple>
+    </label>
+    <label>Telephone:
+        <input type="tel" id="phone" placeholder="xxx-xxx-xxxx" 
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </label>
+    <!-- Numbers-->
+    <label>Pick a number between 1 and 10
+        <input type="number" id="num" min="1" max="10" step="1">
+    </label>
+    <!-- Decimals-->
+    <label>Pick a number between 0 and 1
+        <input type="number" id="numm" min="0" max="1" step="0.1" placeholder="0.5">
+    </label>
+    <!-- Range Bar-->
+    <label>How much do you like our product
+        <br>Not at all <input type="range" id="likes" min="0" max="5" value="4.3">
+        More than anything
+    </label>
+    <!-- Date-->
+    <label>When can you return the book?
+        <input type="date" id="returndate">
+    </label>
+    <!--Color-->
+    <label>What is your favorite color?
+        <input type="color" id="favoritecolor">
+    </label>
+    <!--Search-->
+    <label>Search:
+        <input type="search" id="s">
+    </label>
+
+    <br>
+    <input type="submit" value="Send Form Data">
+
+    <input type="reset" value="Clear Form">
+
+    <br>
+    <!--Radio Buttons-->
+    <p>Select a color</p>
+    <label style="display:block"><input type = "radio" name = "color" value = "red">Red</label>
+    <label>Blue</label><input type= "radio" name="color" value="blue">
+    <input type="image" src="submit.png" id="submitformbtn">
+</body>
+
+</html>
