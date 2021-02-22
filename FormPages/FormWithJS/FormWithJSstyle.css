@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url("backgroundSignIn.jpeg") no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+#login {
+    width:520px;
+    height:520px;
+    background:white;
+    position:relative;
+    top:8.7em;
+    margin-left:auto;
+    margin-right:auto;
+}
+#login h1{
+    display:block;
+}
+#login form{
+ 
+}
