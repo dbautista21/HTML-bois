@@ -62,7 +62,7 @@
 /* All list elements under a second-tier list*/
 #navigationBar ul ul li{
     position: relative;
-    float: none;
+    float:none;
     display: block;
     height:25px;
     width:100%;
