@@ -10,18 +10,30 @@
 </head>
 
 <body>
+    <!-- Major Container -->
     <div class="window">
+        <!-- Header Title-->
         <div class="head">Unsubscribing? Aw so sorry to see you go.</div>
+        <!-- Progress Bar-->
+        <div class="progress-container">
+                <div class="progress-bar"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+        </div>
+        <!-- Main Content Box-->
         <div class="event-box">
+            <!-- Page One-->
             <div class="confirm-form" id="another-chance">
                 <div class="event-text">Before you go, would you like to give us another shot? <br>
                     Keep your subscription to get your next month of
                     <span class="highlight">NIZE Premium for $4.95</span>
                     <hr>
                 </div>
-                <button class="btn" id="continue-btn" onclick="pause()">Continue</button>
+                <button class="btn" id="continue-btn">Continue</button>
                 <button class="btn" id="keepsub-btn">Keep Subscription</button>
             </div>
+            <!-- Page Two-->
             <div id="pause-sub" class="confirm-form">
                 <div class="event-text">
                     <span class="event-title">If you'd like we can pause your subscription.</span><br>
@@ -41,8 +53,9 @@
                 <div class="subsubtext" id="notice-pause">If you cancel or pause you'll have access to your
                     subscription until the end of your billing date.</div>
                 <button class="btn" id="pausesub-btn">Pause Subscription</button>
-                <button class="btn" id="continuecancel-btn" onclick="survey()">Cancel Subscription</button>
+                <button class="btn" id="continuecancel-btn">Cancel Subscription</button>
             </div>
+            <!--Page Three-->
             <div id = "survey" class = "confirm-form">
                 <div class = "event-text">
                         Why are you cancelling your NIZE subscription?
@@ -59,23 +72,8 @@
                 <button class = "btn" id = "continuecancel-btn2" type = "submit" form = "form-box"
                 value = "Continue">Continue</button>
             </div>
-
         </div>
-        <script>
-            var x = document.getElementById("another-chance");
-            var y = document.getElementById("pause-sub");
-            var z = document.getElementById("survey");
-
-            function pause() {
-                x.style.left = "-900px";
-                y.style.left = "0px";
-            }
-
-            function survey() {
-                y.style.left = "-900px";
-                z.style.left = "0px";
-            }
-        </script>
+        <script src = "UnsubscribeFormJS.js"></script>
 </body>
 
 </html>

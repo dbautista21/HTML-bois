@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    
+}
+.container{
+    background-image:linear-gradient(to right, blue, lightblue,blue);
+    width:25rem;
+    height:18.75rem;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#message{
+    text-align:center;
+    font-size: 2.5rem;
+}
+#color-container{
+    border: 2px solid black;
+    bottom:2rem;
+    width:10.25rem;
+    height:6.25rem;
+    margin:1rem auto;
+    background-color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+.btn{
+    margin:0 0.5rem;
+    padding:1rem;
+    border-radius:30px;
+    background-color:blueviolet;
+    color:white;
+    border:0;
+    cursor:pointer;
+    outline:none;
+}
+

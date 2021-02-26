@@ -18,7 +18,11 @@ body{
     width:90vw;
 }
 .panel{
-    background-size:auto 100%;
+    background-size:auto; 
+    /* 
+    background-size:cover might actually be better 
+    depending on the image size 
+    */
     background-position:center;
     background-repeat:no-repeat;
     height:80vh;
@@ -29,7 +33,6 @@ body{
     margin:10px;
     position:relative;
     transition:flex 0.7s ease-in;
-    max-width:793px;
 }
 
 .panel h3{
