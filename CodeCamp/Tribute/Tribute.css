@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    font-family:'Ubuntu Mono', monospace;
+    min-width:51rem;
+    
+}
+#main{
+    margin:0 1rem;
+    background-color: #bdb3d1;
+    width:auto;
+}
+
+.title-container{
+    text-align:center;
+    padding:1.75rem 0; 
+    border-bottom:solid 1px black;
+    margin-bottom:1rem;
+}
+#title{
+    font-size:3rem;
+}
+.title-caption{
+    margin:1rem;
+}
+.flex-img-distro{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    padding-bottom:2rem;
+    align-items:stretch;
+}
+#linus-div{
+    display:flex;
+}
+#linus-image{
+    width:35rem;
+    height:auto;
+    border-radius:10px 0 0 10px;
+}
+
+.caption{
+    background-color:rgb(56, 56, 56);
+    font-size:1rem;
+    color:white;
+    padding:0.625rem;
+}
+
+#linus-caption{
+    width:5.5rem;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.distro-container{
+    min-width:300px;
+    border: 1px solid black; 
+    text-align:center;
+    padding:0.5rem;
+    position:relative;
+    width:25%;
+    font-size:1rem;
+    border-radius:20px;
+}
+#distro-info{
+    display:block;
+    margin-top:2.5rem;
+}
+@media(max-width:64.375rem){
+    .distro-container{
+        display:none;
+    }
+}
+.img-distro{
+    width:50%;
+    margin:2rem auto;
+}
+.img-distro img{
+    width:70px;
+}
+
+.distro-container input{
+    height:2rem;
+    outline:none;
+    position:absolute;
+}
+.left-button{
+    left:3rem;
+    top:6rem;
+}
+.right-button{
+    right:3rem;
+    top:6rem;
+    transform:rotate(180deg);
+}
+#image{
+    max-width:100%;
+    height:auto;
+    margin:0 auto;
+    border-radius:10px 10px 0 0;
+    display:block;
+}
+#img-div{
+    margin: 0 20px;
+    border:2px solid rgb(56, 56, 56);
+    outline:none;
+    border-radius:13px;
+}
+#img-caption{
+    border-radius:0 0 10px 10px;
+}
+#tribute-info{
+    margin:1rem 1.25rem;
+    line-height:1.25rem;
+}
+#tribute-info p:nth-of-type(3){
+    text-align:center;
+    font-size:2rem;
+    line-height:3rem;
+}

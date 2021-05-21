@@ -26,7 +26,7 @@
 
 .progress-container{
     display:flex;
-    margin:40px auto 0;
+    margin:58px auto 0;
     width:35rem;
     justify-content:space-between;
     position:relative;
@@ -138,27 +138,27 @@ hr{
     right:230px;
     width:180px;
     background-color:hsl(46, 54%, 42%);
-    color:#cccac9;
+    color:white;
 
 }
 #keepsub-btn{
     right:20px;
     width:190px;
     background-color:#bb61eb;
-    color:#fff; 
+    color:white; 
 }
 #pausesub-btn{
     bottom:30px;
     right:20px;
     width:190px;
     background-color:#bb61eb;
-    color:#fff;
+    color:white;
 }
 #continuecancel-btn{
     right:230px;
     width:190px;
     background-color:hsl(46, 54%, 42%);
-    color:#cccac9;
+    color:white;
 }
 .input-field{
     right:80px;
@@ -214,7 +214,7 @@ hr{
 #continuecancel-btn2{
     width:190px;
     background-color:hsla(46, 54%, 42%, 0.548);
-    color:#cccac9;
+    color:white;
     right:20px;
     
 }

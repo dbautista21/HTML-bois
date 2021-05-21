@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="SurveyFormstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text" id = "title">Apex Legends Survey</div>
+        <div class="text" id="description">Please answer the survey below.</div>
+        <div class="form-box">
+            <form action="#" class="data-form" id = "survey-form">
+                <div class="form-element">
+                    <label for="name" id = "name-label">Name</label>
+                    <input type="text" id="name" class="input-field" name="name" placeholder="Enter your name"required>
+                </div>
+                <div class="form-element">
+                    <label for="email" id = "email-label">Email</label>
+                    <input type="email" id="email" class="input-field" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-element">
+                    <label for="age" id = "number-label">Age</label>
+                    <input type="number" id="number" class="input-field" name="age" placeholder="Enter your age"required min = "1" max = "150">
+                </div>
+                <div class="form-element checkbox-element">
+                    <span class="checkbox-title">Which platform(s) do you play Apex Legends on?</span>
+                    <input type="checkbox" id="xbox" value = "xbox" name="platform1">
+                    <label for="xbox">Xbox</label>
+
+                    <input type="checkbox" id="ps" value = "ps" name="platform2">
+                    <label for="ps">Playstation 4/5</label>
+
+                    <input type="checkbox" id="pc" value = "pc" name="platform3">
+                    <label for="pc">PC</label>
+
+                    <input type="checkbox" id="switch" value = "switch" name="platform4">
+                    <label for="switch">Nintendo Switch</label>
+                </div>
+                <div class="form-element radio-element">
+                    <span class="radio-title">Would you recommend Apex Legends to a friend?</span>
+                    <input type="radio" id="Yes" name="recommend">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" id="No" name="recommend">
+                    <label for="No">No</label>
+
+                    <input type="radio" id="not-sure" name="recommend">
+                    <label for="not-sure">Not Sure</label>
+                </div>
+                <div class="form-element select-element">
+                    <span class="dropdown-title">What is your most favorite character from Apex Legends.</span>
+
+                    <select id="dropdown" class = "input-field">
+                        <option for="loba">Loba</option>
+                        <option for="bloodhound">Bloodhound</option>
+                        <option for="lifeline">Lifeline</option>
+                        <option for="revenant">Revenant</option>
+                        <option for="wraith">Wraith</option>
+                        <option for="rampart">Rampart</option>
+                        <option for="octane">Octane</option>
+                        <option for="pathfinder">Pathfinder</option>
+                        <option for="caustic">Caustic</option>
+                        <option for="crypto">Crypto</option>
+                        <option for="mirage">Mirage</option>
+                        <option for="fuse">Fuse</option>
+                        <option for="horizon">Horizon</option>
+                        <option for="bangalore">Bangalore</option>
+                        <option for="gibraltar">Gibraltar</option>
+                        <option for="wattson">Wattson</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="feedback">Do you have any suggestions for Season 9? (nerfs?/buffs?)</label>
+                    <textarea id = "feedback" class = "input-field" name = "feedback" rows = "4" cols = "50"></textarea>
+                </div>
+                <div>
+                    <button type = "submit" id = "submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="text" id="thanks">Thank you so much have a good day!</div>
+    </div>
+</body>
+
+</html>

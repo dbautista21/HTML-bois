@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    background-position:center;
+    background-image:linear-gradient(rgba(72, 100, 228, 0.767), rgba(66, 98, 224, 0.767)), url("apex-background.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:fixed;
+    font-family:'Merriweather Sans', sans-serif;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+.form-box{
+    margin:0 auto 0 auto;
+    background-color: rgba(243, 77, 77, 0.651);
+    width: 31.25rem;
+    padding:2rem 0.5rem;
+    text-align:center;
+}
+.form-element{
+    display:grid;
+    grid-row-gap:0.625rem;
+}
+.text{
+    color:white;
+    background-color:black;
+    border-radius:2rem;
+    padding:1rem;
+    text-align:center;
+    font-size:2rem;
+    margin:10% auto;
+    width:31.25rem;
+}
+
+#description{
+    font-size:1rem;
+    margin:8% auto 0 auto;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.data-form{
+    display:grid;
+    grid-row-gap:2rem;
+    font-size:18px;
+    text-align:left;
+    padding: 0 20px;
+    font-weight:500;
+}
+.input-field{
+    border-radius:4px;
+    border:none;
+    background-color:#c9c9c9;
+    width:20rem;
+    outline:none;
+    font-size:16px;
+    padding:0.5rem;
+}
+#number{
+    width:9rem;
+}
+.radio-element{
+    justify-items:center;
+    grid-template-columns:1rem 2fr;
+}
+.radio-element input{
+    justify-self:right;
+    align-self:center;
+}
+.radio-element label{
+    justify-self:left;
+    padding-left:0.6rem;
+}
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 50px #c9c9c9 inset;
+    box-shadow: 0 0 0 50px #c9c9c9 inset;
+}
+.radio-title{
+    grid-column-start:1;
+    grid-column-end:3;
+    justify-self:left;
+    
+}
+
+.checkbox-element{
+    grid-template-columns:1rem 1fr 1rem 1fr;
+}
+.checkbox-title{
+    grid-column-start:1;
+    grid-column-end:5;
+}
+.checkbox-element input{
+    justify-self:right;
+    align-self:center;
+}
+.checkbox-element label{
+    padding-left:0.6rem;
+    justify-self:left;
+}
+
+#dropdown{
+    width:25%;
+}
+#feedback{
+    width:100%;
+}
+#submit{
+    padding:0.625rem;
+    margin: 0 auto;
+    display:block;
+    border-radius:5px;
+    background-color:#c9c9c9;
+    outline:none;
+}
+#thanks{
+    font-size:1rem;
+    margin:0 auto 8% auto;
+    border-radius: 0 0 2rem 2rem;
+}
