@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+html {
+  background-color: #1a1b20;
+}
+/* Main Container for whole program */
+#container {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #1a1b20;
+  font-family: "Raleway SemiBold", monospace;
+}
+/* Top NavBar */
+#header {
+  display: grid;
+  position: fixed;
+  background-color: #ce4547;
+  width: 100vw;
+  height: 4rem;
+  grid-template-columns: 70% 30%;
+  z-index: 5;
+  top: 0;
+}
+#home {
+  display: flex;
+  align-items: center;
+}
+#home-icon-link {
+  margin: 0.5rem 1rem;
+  width: 2rem;
+}
+#home-text-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.28rem;
+}
+.nav-link:hover {
+  color: white;
+  background-color: #8a443f;
+}
+.main-links {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+.main-links li {
+  width: 100%;
+}
+.nav-link {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  /* width: auto; (default value) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End of NavBar */
+
+/* Main content container */
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+/* All sections */
+.section {
+  width: 100%;
+}
+/* First section, Welcome Section */
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+/* All primary header texts: includes section titles */
+h1 {
+  font-size: 3rem;
+}
+#welcome-text-supp {
+  color: #ce4547;
+}
+.title-text-supp {
+  font-family: "Raleway ExtraLight", monospace;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* Second section, Projects Section */
+#projects {
+  font-family: "Raleway Medium", monospace;
+  background-color: rgb(89, 89, 145);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4rem;
+}
+/* CHILD-All project tiles */
+.project-tile {
+  width: 25rem;
+  height: 28rem;
+  margin: 0.8rem;
+  overflow: hidden;
+  background-color: #1a1b20;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 10px;
+}
+/* Projects Section Title */
+#project-title-text {
+  margin-bottom: 2rem;
+}
+/* CHILD-All text of tiles (div)*/
+.tile-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  font-size: 1.2rem;
+}
+/* CHILD-All images of tiles(div)*/
+.tile-img {
+  height: 80%;
+  background-size: cover;
+}
+/* CHILD-All tile link tags(a)*/
+.tile-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+/* CHILD-All images used in tile-img div */
+#productimage {
+  background-image: url("ProjectLinks/ProductImage.png");
+}
+#surveyimage {
+  background-image: url("ProjectLinks/SurveyImage.png");
+  background-position-x: -2.2rem;
+}
+#technicalimage {
+  background-image: url("ProjectLinks/TechnicalImage.png");
+}
+#unsubscribeimage {
+  background-image: url("ProjectLinks/Unsubscribe.png");
+}
+#tributeimage {
+  background-image: url("ProjectLinks/TributeImage.png");
+}
+/* END */
+
+/* Child - All Supplementary text used in tile-text */
+.special-link-text {
+  color: #df441d;
+  padding: 0 0 0.15rem 0;
+  opacity: 0%;
+  transition: opacity 0.6s;
+}
+.tile-link:hover .special-link-text {
+  opacity: 100%;
+  transition: opacity 0.6s;
+}
+
+/* CHILD- Projects Title */
+#project-title-text {
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+/* Third Section : Profile Section */
+#profiles-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* CHILD : Message Block */
+#profiles-title-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CHILD : Profile-supp-text is taken care by .title-text-supp */
+
+/* CHILD: Icon Profiles: Profiles container*/
+#profiles {
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  overflow: visible;
+}
+
+/* CHILD: Each individual profile tile */
+.profile-tile {
+  height: 100%;
+  background-color: white;
+  transition: margin 1s;
+  min-height: 2rem;
+  padding: 0 2rem;
+}
+/* CHILD: Profile Link tag*/
+.profile-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.profile-text {
+  font-size: 1.3rem;
+  height: 100%;
+  /* width: auto; (default value) */
+  display: flex;
+  align-items: center;
+}
+.profile-icon {
+  width: 3.75rem;
+  margin: 0 1rem 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.leftmost {
+  border-radius: 50px 0 0 50px;
+}
+.leftmost:hover {
+  margin-right: 3rem;
+  transition: margin 1s;
+}
+.middle:hover {
+  margin: 0 3rem;
+  transition: margin 1s;
+}
+.rightmost {
+  border-radius: 0 50px 50px 0;
+}
+.rightmost:hover {
+  margin-left: 3rem;
+  transition: margin 1s;
+}
+/* Each individual image for profile : ICONS */
+#instagram-icon {
+  background-image: url("ProfileIcons/InstagramIcon.png");
+}
+#facebook-icon {
+  background-image: url("ProfileIcons/FacebookIcon.png");
+}
+#github-icon {
+  background-image: url("ProfileIcons/GithubIcon.png");
+}
+#email-icon {
+  background-image: url("ProfileIcons/EmailIcon.png");
+}
+/* Footer */
+#footer {
+  height: 20vh;
+  border-top: 5px solid #ce4547;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer:before {
+  content: "Created by Dilan Bautista. Yes, This is actually my project portfolio for now!";
+}
+@media (max-width: 60rem) {
+  .profile-text {
+    display: none;
+  }
+  .profile-tile {
+    padding: 1rem;
+  }
+  .profile-icon {
+    margin: 0;
+  }
+}

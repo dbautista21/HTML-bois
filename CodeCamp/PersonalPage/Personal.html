@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name = "author" content = "Dilan Bautista">
+    <link rel="stylesheet" href="Personalstyle.css">
+    <meta name="author" content="Dilan Bautista">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
 </head>
+<!-- 
+    - Make sure to have a media query
+    - welcome-section height = viewport
+    - navbar fixed top 
+-->
+
 <body>
-    
+    <div id="container">
+        <!-- Top Fixed Header-->
+        <div id="header">
+            <!--Main Logo + Text-->
+            <div id="home">
+                <a href="#top" id="home-icon-link">
+                    <img src="home-icon.png" alt="Home" id="home-icon-img">
+                </a>
+                <a href="#top" id="home-text-link">Dilan's Personal Page</a>
+            </div>
+            <!-- Horizontal List of Links-->
+            <nav id="navbar">
+                <ul class="main-links">
+                    <li><a href="#welcome-section" class="nav-link">About</a></li>
+                    <li><a href="#profiles" class="nav-link" >Contact</a></li>
+                    <li><a href="#projects" class="nav-link" >Work</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="main-container">
+            <!-- Welcome section-->
+            <div id="welcome-section" class="section">
+                <h1 id="welcome-text">Hello World! My name is Dilan.</h1>
+                <span id="welcome-text-supp" class = "title-text-supp">a web developer</span>
+            </div>
+            <div id="projects" class="section">
+                <h1 id="project-title-text">These are some of my projects.</h1>
+                <div class="project-tile"><a href="../Product/Productt.html" class="tile-link" target = "_blank">
+                        <div id="productimage" class="tile-img"></div>
+                        <div class="tile-text"><span class="special-link-text">&lt;&nbsp;</span>Product Page<span
+                                class="special-link-text">&nbsp;/&gt;</span></div>
+                    </a></div>
+                <div class="project-tile"><a href="../SurveyForm/SurveyForm.html" class="tile-link" target = "_blank">
+                        <div id="surveyimage" class="tile-img"></div>
+                        <div class="tile-text"><span class="special-link-text">&lt;&nbsp;</span>Survey Page<span
+                                class="special-link-text">&nbsp;/&gt;</span></div>
+                    </a></div>
+                <div class="project-tile"><a href="../Tribute/Tribute.html" class="tile-link" target = "_blank">
+                        <div id="tributeimage" class="tile-img"></div>
+                        <div class="tile-text"><span class="special-link-text">&lt;&nbsp;</span>Tribute Page<span
+                                class="special-link-text">&nbsp;/&gt;</span></div>
+                    </a></div>
+                <div class="project-tile"><a href="../TechnicalDoc/TechDoc.html" class="tile-link" target = "_blank">
+                        <div id="technicalimage" class="tile-img"></div>
+                        <div class="tile-text"><span class="special-link-text">&lt;&nbsp;</span>Technical Page<span
+                                class="special-link-text">&nbsp;/&gt;</span></div>
+                    </a></div>
+                <div class="project-tile"><a href="../../FormPages/Unsubscribe/UnsubscribeForm.html" class="tile-link" target = "_blank">
+                        <div id="unsubscribeimage" class="tile-img"></div>
+                        <div class="tile-text"><span class="special-link-text">&lt;&nbsp;</span>Unsubscribe<span
+                                class="special-link-text">&nbsp;/&gt;</span></div>
+                    </a></div>
+
+            </div>
+            <!-- Links to profiles -> New Tabs (Github, Facebook, Instagram, etc.)-->
+            <div id="profiles-section" class="section">
+                <div id="profiles-title-text"><h1>Let's work together...</h1>
+                    <span id = "profiles-supp-text" class = "title-text-supp">How do you take your coffee?</span>
+                </div>
+                <div id="profiles">
+                    <div class="profile-tile leftmost">
+                        <a href="https://www.instagram.com/dstn.prpl/" class="profile-link" target="_blank">
+                            <div id="instagram-icon" class="profile-icon"></div>
+                            <div id="instagram-text" class="profile-text">Instagram</div>
+                        </a></div>
+                    <div class="profile-tile middle">
+                        <a href="https://github.com/dbautista21" class="profile-link" target="_blank" id = "profile-link">
+                            <div id="github-icon" class="profile-icon"></div>
+                            <div id="github-text" class="profile-text">Github</div>
+                        </a></div>
+                    <div class="profile-tile middle">
+                        <a href="https://www.facebook.com/dilan.bautista/" class="profile-link" target="_blank">
+                            <div id="facebook-icon" class="profile-icon"></div>
+                            <div id="facebook-text" class="profile-text">Facebook</div>
+                        </a></div>
+                    <div class="profile-tile rightmost">
+                        <a href="mailto:dilan_bautista@ymail.com" class="profile-link" target="_blank">
+                            <div id="email-icon" class="profile-icon"></div>
+                            <div id="email-text" class="profile-text">Email</div>
+                    </a></div>
+                </div>
+            </div>
+            <div id="footer">
+
+            </div>
+
+        </div>
+    </div>
+    <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html
