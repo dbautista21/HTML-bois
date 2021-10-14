@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+p::before {
+  content: "hello";
+  width: 5rem;
+  height: 2rem;
+  background-color: darkred;
+  display: block;
+  overflow: scroll;
+}
+p::after {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+  display: block;
+}
+
+/* 
+ * Displays nothing because img elements 
+ */
+img::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: purple;
+}
