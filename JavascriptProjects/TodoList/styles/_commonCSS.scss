@@ -1,0 +1,6 @@
+@mixin whiteText() {
+  color: white;
+}
+@mixin marginTopBottom($margin: 1rem auto) {
+  margin: $margin;
+}
