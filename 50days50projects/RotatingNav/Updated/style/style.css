@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato";
+  background-color: #333;
+  overflow-x: hidden;
+}
+
+.show-nav .content {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+.show-nav + nav li {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.circle-container {
+  position: fixed;
+  z-index: 100;
+  top: -100px;
+  left: -100px;
+}
+
+.circle-container .circle {
+  background-color: #ff7979;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "a a " 100% 50% "b c" 50%/ 1fr 1fr;
+}
+
+.circle-container .circle button {
+  background-color: transparent;
+  font-size: 35px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.circle-container .circle #open {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/ 3;
+}
+
+.circle-container .circle #close {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.content {
+  background-color: #fff;
+  padding: 100px;
+  line-height: 2.5rem;
+  min-height: 100vh;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content small {
+  font-style: italic;
+}
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+nav ul li {
+  margin: 20px 0;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.4s -webkit-transform ease-in;
+  transition: 0.4s -webkit-transform ease-in;
+  transition: 0.4s transform ease-in;
+  transition: 0.4s transform ease-in, 0.4s -webkit-transform ease-in;
+}
+
+nav ul li i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+nav ul li + li {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  margin-left: 15px;
+}
+
+nav ul li + li + li {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  margin-left: 30px;
+}
+/*# sourceMappingURL=style.css.map */

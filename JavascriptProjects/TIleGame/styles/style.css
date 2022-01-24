@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  background-color: #82c0cc;
+}
+
+body {
+  font-family: "Roboto", monospace;
+}
+
+.container {
+  padding-top: 3vh;
+  max-width: 100vw;
+  min-height: 97vh;
+  background-image: url("../images/background.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #16697a;
+  margin: 0 15px;
+  border-radius: 15px;
+  color: #ede7e3;
+  padding: 0 10px;
+}
+
+form {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.title {
+  padding: 20px 0 10px 0;
+}
+
+input {
+  width: 40px;
+  line-height: 24px;
+}
+
+label {
+  line-height: 24px;
+}
+
+.game {
+  background-color: transparent;
+  width: 90%;
+  height: 300px;
+  margin: 10px auto;
+}
+
+.list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tile {
+  border-radius: 20px;
+  width: 45%;
+  height: 45%;
+  background-color: #f3dfc1;
+  margin: 6px auto;
+}
+/*# sourceMappingURL=style.css.map */

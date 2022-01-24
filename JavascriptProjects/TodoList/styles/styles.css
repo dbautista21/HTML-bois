@@ -5,20 +5,27 @@
   border: none;
 }
 
+html {
+  background-color: #2a3132;
+}
+
 .container {
   min-height: 80vh;
   padding: 10vh 0;
   display: block;
+  overflow-x: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url("../images/mountain-background.jpeg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../images/mountain-background.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
 }
 
 .content {
   color: white;
-  margin: 1rem auto;
+  margin: 0 auto;
   max-width: 21.875rem;
+  max-height: 100%;
   width: 65vw;
   background-color: #2a3132;
   padding: 1rem;

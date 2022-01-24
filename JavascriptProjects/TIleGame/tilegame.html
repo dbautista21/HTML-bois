@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta name="author" content="Dilan Bautista" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tile Game</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="menu">
+        <h1 class="title">Tile Game</h1>
+        <form action="#">
+          <label for="limit-tiles" class="question"
+            >Welcome to the tile game! <br />
+            Please enter the number of matches you would like to play
+            with:</label
+          >
+          <input
+            type="number"
+            name="limit-tiles"
+            min="1"
+            max="5"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <div class="game">
+        <ul class="list">
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

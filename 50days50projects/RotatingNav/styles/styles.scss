@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+$white: #fafafa;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: {
+    color: #333;
+  }
+  color: #222;
+}
+// Alternate container state
+.show-nav {
+  transition: transform 0.5s linear;
+  transform: rotate(-20deg);
+  transform-origin: top left;
+  .circle {
+    transform: rotate(-70deg);
+  }
+  & + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+  }
+}
+//Natural container state
+.container {
+  background-color: $white;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+} //container
+// Circle component
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  .circle {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100px;
+      background: transparent;
+      border: 0;
+      font-size: 26px;
+      color: $white;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      } //focus
+    } //button
+    #open {
+      left: 60%;
+    } //open
+    #close {
+      top: 60%;
+      transform: rotate(90deg);
+      transform-origin: top left;
+    } //close
+  } //circle
+} //circle-container
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+  img {
+    max-width: 100%;
+  } //img
+  h1 {
+    margin: 0;
+  } //h1
+  small {
+    color: #555;
+    font-style: italic;
+  } //small
+  p {
+    color: #333;
+    line-height: 1.5;
+  } //p
+}
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+  ul {
+    list-style-type: none;
+    padding-left: 30px;
+    li {
+      color: $white;
+      text-transform: uppercase;
+      margin: 40px 0;
+      transform: translateX(-100%);
+      transition: transform 0.4s ease-in;
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      & + li {
+        transform: translateX(-150%);
+        margin-left: 15px;
+      }
+      & + li + li {
+        transform: translateX(-200%);
+        margin-left: 30px;
+      }
+    }
+  }
+}
